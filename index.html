@@ -1,0 +1,271 @@
+<!-- Author: Elizabeth Herrejon -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>UVAs Book Club</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles-sheet.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body class="grid-body">
+        <nav class="flex-nav"> <!-- NAVIGATION -->
+            <div class="nav-items">
+                <button onclick="toggleMenu()">
+                    <img src="images/bars-solid.svg" alt="menu-icon" class="menu-img">
+                </button>
+                <h1>UVAs Book Club</h1>
+                <ul id="navigation">
+                    <button onclick="goHome()">
+                            <a href="#home">Home</a>
+                    </button>
+
+                    <button onclick="goCurrentlyReading()">
+                            <a href="#currentlyReading">Currently Reading</a>
+                    </button>
+
+                    <!-- <button onclick="goPreviouslyRead()">
+                            <a href="#previouslyRead">Previously Read</a>
+                    </button> -->
+                </ul>  
+            </div>
+            
+        </nav>
+
+        <section id="home"> <!-- HOME -->
+            <div class="flex-section">
+                <header class="header-items">
+                <!-- <h2>Home</h2> -->
+                <button onclick="goHome()"><img src="images/UVA.svg" alt="logo" class="logo-img"></button> 
+                </header>
+
+                <main class="general-items">
+                    <h3>Welcome</h3>
+                    <p><abbr title="To Be Read">Las UVAs bookclub</abbr> is an extension of an already exsiting club, Las UVAs, 
+                        dedicated to giving its members a chance to read a good (or bad) book. Too often the excuse,<em> there is 
+                        never enough time</em> destroys a would-be reader! Las UVAs bookclub is here to remind members that reading
+                        should be fun and produce meangingful and fun conversations about the montly work!</p>
+                    <p>However, it is <u>never</u> necessary to start or finish any book. You are always welcome at Las UVAs book meetings!</p>
+
+                    <!-- <h3>For more information, click on the three bars to start navigating our pages!</h3> -->
+                    <h3>For this months read, click here: <button onclick="goCurrentlyReading()">
+                        <a href="#currentlyReading">Currently Reading</a>
+                        </button>
+                    </h3>
+                    
+                </main>
+
+                <article class="general-items">
+                    <h3>Meet las UVAs</h3>
+                    <p> I'm las UVAs' bookclub host, Elizabeth. </p> 
+                    <p>Glad you made it! I was bored one day and wanted to create a family bookclub so we can have a discussion about books 
+                        we find fascinating! Love you guys :)
+                    </p>
+                    <figure>
+                        <img src="images/kawaii_mushroom.png" alt="image" id="prof-img">
+                        <figcaption>Current Obsession</figcaption>
+                    </figure>
+                    
+                </article>
+
+                <aside class="general-items">
+                </aside>
+
+                <footer class="general-items">
+                    <p>Website Template from <a href="https://github.com/stein-sha2197/TBR-website" target="_blank">@stein-sha2197</a> on GitHub</p>
+                </footer>
+            </div>    
+        </section>
+
+        <!-- <section id="join"> 
+            <div class="flex-section">
+                <header class="header-items">
+                    <h2>Join</h2>
+                    <button onclick="goHome()"><img src="images/TBR.svg" alt="logo" class="logo-img"></button>
+                </header>
+
+                <main class="general-items">
+                    <h3>Join us</h3>
+                    <p>We meet regulary, about once a month.
+                        We'd love to have you come and share what you loved (or didn't love)
+                        about our latest read!</p>
+                    
+                </main>
+
+                <article class="general-items">
+                </article>
+
+                <aside class="general-items">
+                    <figure >
+                        <img src="images/bookstack.svg" alt="image" id="bookstack">
+                    </figure>
+                </aside>
+
+                <footer class="general-items">
+                    <p>DM me to join TBR</p>
+                    <p><em>coming soon!</em></p>    
+                    <details><p>My handles</p>
+                        <ul>
+                           <li>Facebook</li>
+                           <li>Instagram</li>
+                           <li>Twitter</li>
+                        </ul>
+                    </details>
+                </footer>
+            </div>
+        </section> -->
+
+        <!-- <section id="aboutTBR"> 
+            <div class="flex-section">    
+                <header class="header-items">
+                    <h2>About TBR</h2>
+                    <button onclick="goHome()"><img src="images/TBR.svg" alt="logo" class="logo-img"></button>
+                </header>
+
+                <main class="general-items">
+                    <h3>Main</h3>
+                    <iframe
+                        src="https://www.youtube.com/embed/T5M0JXJn2yk">
+                    </iframe>
+                </main>
+
+                <article class="general-items">
+                    <h4>Article</h4>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                    <aside>heres some aside content</aside>
+                    <figure >
+                        <h6>title of image</h6>
+                        <img src="" alt="image">
+                        <figcaption>descriptive image text</figcaption>
+                    </figure>
+                </article>
+
+                <aside class="general-items">
+                    <h5>Aside</h5>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                    <aside>heres some aside content</aside>
+                </aside>
+
+                <footer class="general-items">
+                    <p>DM me to join TBR</p>
+                    <p><em>coming soon!</em></p>    
+                    <details><p>My handles</p>
+                        <ul>
+                           <li>Facebook</li>
+                           <li>Instagram</li>
+                           <li>Twitter</li>
+                        </ul>
+                    </details>
+                </footer>
+            </div>
+        </section> -->
+
+        <section id="currentlyReading"> <!-- CURRENTLY READING -->
+            <div class="flex-section"> 
+                <header class="header-items">
+                    <h2>Currently Reading</h2>
+                    <button onclick="goHome()"><img src="images/UVA.svg" alt="logo" class="logo-img"></button>
+                </header>
+
+                <main class="general-items">
+                    <h3>August Read</h3>
+                    <p>Picked by Elizabeth, this month's read:</p> 
+                    
+                    <figure >
+                        <h6>The Old Woman with the Knife</h6>
+                        <img src="images/the_old_woman_with_the_knife.png" alt="image">
+                        <figcaption><a href="books/The Old Woman with the Knife - Gu Byeong-mo.epub" download="the_old_woman_with_the_knife">Epub File Download</a></figcaption>
+                    </figure>
+                    
+                </main>
+
+                <article class="general-items">
+                    <h45>Synopsis</h4>
+                        <p>
+                            Hornclaw, at sixty-five, is beginning to slow down. She lives modestly in a small apartment, 
+                            with only her aging dog, a rescue named Deadweight, to keep her company. There are expectations for people 
+                            her age—that she'll retire and live out the rest of her days quietly. But Hornclaw is not like other people. 
+                            She is an assassin. 
+                        </p>
+                        <p>
+                            Double-crossers, corporate enemies, cheating spouses—for the past four decades, Hornclaw has killed them all 
+                            with ruthless efficiency, and the less she's known about her targets, the better. But now, nearing the end of 
+                            her career, she has just slipped up. An injury leads her to an unexpected connection with a doctor and his family. 
+                            But emotions, for an assassin, are a dangerous proposition. As Hornclaw's world closes in, this final chapter in 
+                            her career may also mark her own bloody end.
+                        </p>
+                        
+                    <!-- Side Content -->
+                </article>
+
+                <aside class="general-items">
+                    <h5>Upcoming Meetings</h5>
+                    <p>First Meeting </p>
+                    <aside>September 3,2023 @ 3pm EST</aside>
+                    <aside>Download this <a href="Meetings\Las UVAs Bookclub Meeting 1.ics" download="meeting1">event</a> to your calendar.</aside>
+                </aside>
+
+                <footer class="general-items">
+                    <p>Website Template from <a href="https://github.com/stein-sha2197/TBR-website" target="_blank">@stein-sha2197</a> on GitHub</p>
+                </footer>
+            </div>    
+        </section>
+
+        <section id="previouslyRead"> <!-- Previously Read -->
+            <div class="flex-section"> 
+                <header class="header-items">
+                    <h2>Previously Read</h2>
+                    <button onclick="goHome()"><img src="images/TBR.svg" alt="logo" class="logo-img"></button> 
+                </header>
+
+                <main class="general-items">
+                    <h3>Main</h3>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                </main>
+
+                <article class="general-items">
+                    <h4>Article</h4>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                    <aside>heres some aside content</aside>
+                    <figure >
+                        <h6>title of image</h6>
+                        <img src="" alt="image">
+                        <figcaption>descriptive image text</figcaption>
+                    </figure>
+                </article>
+
+                <aside class="general-items">
+                    <h5>Aside</h5>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                    <aside>heres some aside content</aside>
+                </aside>
+
+                <footer class="general-items">
+                    <p>Website Template from <a href="https://github.com/stein-sha2197/TBR-website" target="_blank">@stein-sha2197</a> on GitHub</p>
+                </footer>
+            </div>    
+        </section>
+    </body>
+</html>
