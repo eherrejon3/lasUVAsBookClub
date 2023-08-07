@@ -195,9 +195,12 @@ footer{grid-area:footer;}
     #prof-img{
         width: 30vw;
         border-radius: 1000px; 
+    }
+    #cover{
+        width: 50vw; 
      }
      #bookstack{
-        width: 50vw;
+        width: 100vw;
      }
 /* font styles */
     h1{
